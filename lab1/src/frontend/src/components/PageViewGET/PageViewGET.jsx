@@ -30,10 +30,6 @@ export default function PageViewGET() {
 
     return (
         <div>
-            <p><Link
-                to="/send-GET"
-                className="btn btn-secondary"
-            >Ввести в форме новый GET</Link></p>
             <table className="table table-striped" >
                 <thead>
                     <tr>
@@ -43,7 +39,7 @@ export default function PageViewGET() {
                 </thead>
                 <tbody>
                     {
-                        Object.keys(GET).map(function(key, index) {
+                        Object.keys(GET).map(function (key, index) {
                             return (
                                 <tr key={index}>
                                     <td>{key}</td>
@@ -54,6 +50,14 @@ export default function PageViewGET() {
                     }
                 </tbody>
             </table>
+            <div className="mb-3">
+                <Link
+                    to="/send-GET"
+                    className="btn btn-primary"
+                >
+                    Ввести в форме новый GET
+                </Link>
+            </div>
         </div>
     )
 }
