@@ -46,8 +46,7 @@
             <td>ИД:</td>
             <td>
                 <input
-                    type="text"
-                    name="ID"
+                    type="text" name="ID"
                     value="<?php echo $gpi_id; ?>"
                     readonly
                 />
@@ -57,8 +56,7 @@
             <td>Студент:</td>
             <td>
                 <input
-                    type="text"
-                    name="Student"
+                    type="text" name="Student"
                     value="<?php gpi_echoStudent($gpi_array); ?>"
                 />
             </td>
@@ -147,8 +145,7 @@
             <td>Группа:</td>
             <td>
                 <input
-                    type="text"
-                    name="Group"
+                    type="text" name="Group"
                     value="<?php gpi_echoGroup($gpi_array); ?>"
                 />
             </td>
