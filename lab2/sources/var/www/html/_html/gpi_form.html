@@ -1,0 +1,40 @@
+<p>Галанин П. И. =gpi_form=</p>
+<form action="/gpi_save">
+    <table>
+        <tr>
+            <td>Студент:</td>
+            <td><input type="text" name="Student" value="Галанин Павел" /></td>
+        </tr>
+        <tr>
+            <td>Факультет:</td>
+            <td>
+                <select name="Faculty">
+                    <option value="sf">Строительный факультет</option>
+                    <option value="feis" selected>Факультет электронно информационных систем</option>
+                    <option value="fise">Факультет инженерных систем и экологии</option>
+                    <option value="ef">Экономический факульет</option>
+                    <option value="msf">Машиностроительный факультет</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Курс:</td>
+            <td>
+                <select name="Course">
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3" selected>3 курс</option>
+                    <option value="4">4 курс</option>
+                    <option value="5">5 курс</option>
+                    <option value="6">6 курс</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Группа:</td>
+            <td><input type="text" name="Group" value="ПО-4" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="submit" />
+    <input type="reset" value="reset" />
+</form>
