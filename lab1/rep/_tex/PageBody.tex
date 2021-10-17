@@ -1,31 +1,55 @@
 Тема:
-Передача данных через параметры URL. Передача данных через HTML-форму.
+Передача данных через параметры URL.
+Передача данных через HTML-форму.
+Основные принципы организации веб-приложения, использующего базы данных.
 
 Цель работы:
-Освоить методы передачи данных в веб -среде.
+Освоить методы передачи данных в веб-среде.
+Разработать простейшее веб-приложение, использующее базы данных.
 
 \lstinputlisting[]
-{../src/.env}
+{../sources/.env}
+
+\lstinputlisting[language=make]
+{../sources/Makefile}
 
 \lstinputlisting[]
-{../src/docker-compose.yml}
+{../sources/Dockerfile}
 
 \lstinputlisting[]
-{../src/etc/nginx/conf.d/default.conf}
+{../sources/docker-compose.yml}
 
-\lstinputlisting[language=HTML]
-{../src/public_html/index.html}
+\lstinputlisting[]
+{../sources/initdb.d/wt_lab1.sql}
 
-\lstinputlisting[language=HTML]
-{../src/public_html/gpi_error404.html}
-
-\lstinputlisting[language=HTML]
-{../src/public_html/gpi_url/index.html}
-
-\lstinputlisting[language=HTML]
-{../src/public_html/gpi_personal.cfm/index.html}
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/index.php}
 
 \newpage
 
 \lstinputlisting[language=PHP]
-{../src/public_html/gpi_savepersonal.cfm/index.php}
+{../sources/var/www/html/gpi_url/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/gpi_personal.cfm/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/gpi_savepersonal.cfm/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/gpi_view/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/gpi_edit/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/gpi_update/index.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/_html/gpi_head.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/_sql/gpi_connect.php}
+
+\lstinputlisting[language=PHP]
+{../sources/var/www/html/_sql/gpi_delete.php}
