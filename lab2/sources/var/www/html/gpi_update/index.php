@@ -23,7 +23,7 @@
         }
     }
 ?>
-
+<p>Галанин П. И. =gpi_update=</p>
 <table>
     <tr>
         <td>ИД</td>

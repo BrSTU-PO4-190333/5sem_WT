@@ -38,7 +38,6 @@
         echo $gpi_array[0]["Group"];
     }
 ?>
-
 <p>Галанин П. И. =gpi_edit=</p>
 <form action="/gpi_update/" method="POST">
     <table>

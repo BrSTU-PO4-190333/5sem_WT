@@ -16,7 +16,7 @@
         $gpi_i += 1;
     }
 ?>
-
+<p>Галанин П. И. =gpi_view=</p>
 <table>
     <?php
         $gpi_array_length = count($gpi_array);

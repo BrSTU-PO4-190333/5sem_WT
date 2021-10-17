@@ -19,9 +19,7 @@
         echo "<p>sql = $gpi_sql</p>";
     }
 ?>
-
 <p>Галанин П. И. =gpi_save=</p>
-
 <table>
     <tr>
         <td>Студент</td>
