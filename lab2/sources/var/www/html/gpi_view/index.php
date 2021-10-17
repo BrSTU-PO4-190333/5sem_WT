@@ -33,6 +33,7 @@
         <td>Курс</td>
         <td>Группа</td>
         <td>Удалить</td>
+        <td>Изменить</td>
     </tr>
     <?php
             $gpi_i = 0;
@@ -45,6 +46,7 @@
         <td><?php echo $gpi_array[$gpi_i]["Course"]; ?></td>
         <td><?php echo $gpi_array[$gpi_i]["Group"]; ?></td>
         <td><a href="?ID=<?php echo $gpi_array[$gpi_i]["ID"]; ?>">delete</a></td>
+        <td><a href="/gpi_edit/?ID=<?php echo $gpi_array[$gpi_i]["ID"]; ?>">edit</a></td>
     </tr>
     <?php
                 $gpi_i += 1;
