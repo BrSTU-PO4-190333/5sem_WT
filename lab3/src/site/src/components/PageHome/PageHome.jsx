@@ -1,4 +1,4 @@
-export default function Page404() {
+export default function PageHome() {
     return (
         <div>
             <h2>Home page</h2>

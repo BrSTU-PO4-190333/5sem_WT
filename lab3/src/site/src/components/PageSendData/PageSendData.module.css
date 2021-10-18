@@ -1,0 +1,9 @@
+.highlight
+{
+    margin: 8px;
+    padding: 16px;
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+    border: 1px solid lightgray;
+    overflow-x: scroll;
+}
