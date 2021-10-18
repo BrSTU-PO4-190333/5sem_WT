@@ -1,16 +1,17 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 import styles from "./PageSendData.module.css";
 import gpi_CryptoJS from '../../class/gpi_CryptoJS';
 
 export default function PageSendData() {
-    const [gpi_Name, gpi_SetName] = useState("");
-    const [gpi_Position, gpi_SetPosition] = useState("");
-    const [gpi_Department, gpi_SetDepartment] = useState("");
-    const [gpi_Phone, gpi_SetPhone] = useState("");
-    const [gpi_Date, gpi_SetDate] = useState("");
-    const [gpi_Email, gpi_SetEmail] = useState("");
-    const [gpi_Comment, gpi_SetComment] = useState("");
+    const [gpi_Name, gpi_SetName] = useState("Иван");
+    const [gpi_Position, gpi_SetPosition] = useState("Студент");
+    const [gpi_Department, gpi_SetDepartment] = useState("ФЭИС");
+    const [gpi_Phone, gpi_SetPhone] = useState("123-45-67");
+    const [gpi_Date, gpi_SetDate] = useState("2021.10.20");
+    const [gpi_Email, gpi_SetEmail] = useState("ivan@example.com");
+    const [gpi_Comment, gpi_SetComment] = useState("Какой-то коммментарий");
 
     const [gpi_Object, gpi_SetObject] = useState("{}");
     const [gpi_CryptoObject, gpi_SetCryptoObject] = useState("{}");
@@ -25,9 +26,22 @@ export default function PageSendData() {
             Email: gpi_Email,
             Comment: gpi_Comment,
         };
+        console.log(OBJECT);
         const CRYPTO_OBJECT = gpi_CryptoJS.CryptoObject(OBJECT);
         gpi_SetObject(JSON.stringify(OBJECT, null, '\t'));
         gpi_SetCryptoObject(JSON.stringify(CRYPTO_OBJECT, null, '\t'));
+        console.log(CRYPTO_OBJECT)
+        const URL = `${process.env.REACT_APP__API_URL}:${process.env.REACT_APP__API_PORT}/add`;
+        axios.post(URL, CRYPTO_OBJECT)
+        .then(function(response) {
+            if(response?.data?.msg === "success") {
+                alert("Данные добавлены в базу данных");
+            }
+        })
+        .catch(function(err) {
+            console.log("Error on PageSendData");
+            console.log(err);
+        })
     }
 
     return (
