@@ -11,6 +11,7 @@ export default function PageSendData() {
     const [gpi_Date, gpi_SetDate] = useState("");
     const [gpi_Email, gpi_SetEmail] = useState("");
     const [gpi_Comment, gpi_SetComment] = useState("");
+
     const [gpi_Object, gpi_SetObject] = useState("{}");
     const [gpi_CryptoObject, gpi_SetCryptoObject] = useState("{}");
 
@@ -58,12 +59,13 @@ export default function PageSendData() {
                     <tr>
                         <td>Отдел</td>
                         <td>
-                            <input
-                                type="text" className="form-control"
-                                placeholder="M&M"
+                            <select
+                                className="form-select"
                                 onChange={event => gpi_SetDepartment(event.target.value)}
-                                value={gpi_Department}
-                            />
+                            >
+                                <option>M&M</option>
+                                <option>-</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -125,9 +127,9 @@ Then I have my breakfast. \
             </div>
 
             <h2>JSON to hashed and encrypted JSON</h2>
-            <div style={{display: "flex"}}>
-                <pre style={{width: "50%"}} className={styles.highlight}>{gpi_Object}</pre>
-                <pre style={{width: "50%"}} className={styles.highlight}>{gpi_CryptoObject}</pre>
+            <div style={{ display: "flex" }}>
+                <pre style={{ width: "50%" }} className={styles.highlight}>{gpi_Object}</pre>
+                <pre style={{ width: "50%" }} className={styles.highlight}>{gpi_CryptoObject}</pre>
             </div>
         </div>
     );
