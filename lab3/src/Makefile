@@ -8,3 +8,6 @@ restart-mysql:
 
 start-api:
 	cd api; npm run start
+
+start-site:
+	cd site; npm run start
