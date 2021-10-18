@@ -35,7 +35,7 @@ const gpi_CryptoJS = {
 
         // {} => { "SecretKey": "secretKey" } => { "hash$%&": "secretKey" }
         const keys = Object.keys(obj);
-        keys.map(function(value) {
+        keys.forEach(function(value) {
             let gpi_key = gpi_CryptoJS.hash500(value);
             let gpi_value = gpi_CryptoJS.encrypt(obj[value], secret_key);
             resultObject[gpi_key] = gpi_value;
