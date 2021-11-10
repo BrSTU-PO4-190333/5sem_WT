@@ -24,23 +24,21 @@ sudo docker-compose up
 sudo docker-compose down
 ```
 
-or
-
-```bash
-cd texlive-full
-sudo docker-compose run latex /bin/bash
-cd /home/user/content/texlive-full
-make gpi-build-rep
-```
-
-Regenerate report
-
-```bash
-make gpi-build-rep
-```
-
-Close the virtual machine
-
-```bash
-sudo docker-compose down
-```
+> ```bash
+> cd texlive-full
+> sudo docker-compose run latex /bin/bash
+> cd /home/user/content/texlive-full
+> make gpi-build-rep
+> ```
+> 
+> Regenerate report
+> 
+> ```bash
+> make gpi-build-rep
+> ```
+> 
+> Close the virtual machine
+> 
+> ```bash
+> sudo docker-compose down
+> ```
