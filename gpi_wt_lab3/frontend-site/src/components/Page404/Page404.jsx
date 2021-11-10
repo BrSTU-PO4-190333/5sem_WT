@@ -1,0 +1,7 @@
+export default function Page404() {
+    return (
+        <div>
+            <h2>Error 404</h2>
+        </div>
+    );
+}
