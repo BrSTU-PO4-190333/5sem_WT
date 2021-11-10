@@ -1,9 +1,7 @@
-build:
-	#pdflatex main.tex
-	latexmk -pdf -output-directory=_build main.tex
-	latexmk -pdf -output-directory=_build main2.tex
+gpi-build-rep:
+	latexmk -pdf -output-directory=_build gpi_wt_lab3.tex
 
-clean:
+gpi-clean:
 	rm -rfv ./*/*.aux
 	rm -rfv ./*/*.fdb_latexmk
 	rm -rfv ./*/*.fls
