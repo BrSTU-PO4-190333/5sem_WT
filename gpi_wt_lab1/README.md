@@ -1,19 +1,34 @@
 ## Launching the project
 
 ```bash
-make gpi-run-mysql
+cd lamp
+sudo docker-compose up
+sudo docker-compose down
 ```
 
 - http://localhost:8000 - phpmyadmin
 - http://localhost:8001 - site
 
-## Generate a report
+## Clearing MySQL
 
-`docker-compose up` or
+```bash
+cd lamp
+sudo make gpi-clean-mysql
+```
+
+## Generate a report
 
 ```bash
 cd texlive-full
-docker-compose run latex /bin/bash
+sudo docker-compose up
+sudo docker-compose down
+```
+
+or
+
+```bash
+cd texlive-full
+sudo docker-compose run latex /bin/bash
 cd /home/user/content/texlive-full
 make gpi-build-rep
 ```
@@ -27,5 +42,5 @@ make gpi-build-rep
 Close the virtual machine
 
 ```bash
-docker-compose down
+sudo docker-compose down
 ```
