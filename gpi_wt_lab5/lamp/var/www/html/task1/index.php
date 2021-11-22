@@ -64,6 +64,7 @@
 
 <div class="container">
     <?php printf("<h2><pre>%-32s %32s</pre></h2>", "=Галанин П. И.=", "=task1="); ?>
+    <p><a href="/">На главную страницу</a></p>
     <table class="table table-striped">
         <thead>
             <tr>
