@@ -4,17 +4,10 @@
         $gpi_is_dir = is_dir($gpi_path); // существует ли такой путь?
         if ($gpi_is_dir == 1)
         {
-            echo "<p style='color: red;'>Каталог \"$gpi_path\" существует! Пересоздать нельзя!</p>";
+            echo "gpi_mkdir: cannot create directory '$gpi_path': File exists \n";
             return;
         }
 
-        $gpi_mkdir = mkdir($gpi_path);
-        if ($gpi_mkdir)
-        {
-            echo "<p style='color: green;'>Каталог \"$gpi_path\" создан успешно</p>";
-        }
-        else
-        {
-            echo "<p style='color: red;'>Каталог \"$gpi_path\" не создан!</p>";
-        }
+        mkdir($gpi_path);
+        echo "gpi_mkdir: created directory '$gpi_path' \n";
     }
