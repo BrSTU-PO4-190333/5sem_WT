@@ -33,7 +33,7 @@
 		</thead>
 		<tbody>
 			<?php
-				$gpi_query = $gpi_connection->query("SELECT * FROM images;");
+				$gpi_query = $gpi_connection->query("SELECT * FROM gpi_images;");
 				while($gpi_row = $gpi_query->fetch_assoc()):
 					$gpi_id = $gpi_row['gpi_id'];
 					$gpi_image_src = "data:image/jpeg;base64, " . base64_encode($gpi_row['gpi_image_src']);
