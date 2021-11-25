@@ -1,0 +1,151 @@
+\subparagraph{Задание} \hspace{0pt}
+
+\begin{itemize}
+    \item[1.] Написать cfm.-шаблон, выводящий содержимое каталога WWWRoot.
+    \item[2.] Написать cfm.-шаблон для создания каталога на диске
+    \item[3.] Написать cfm.-шаблон для переименования каталога
+    \item[4.] Написать cfm.-шаблон для удаления каталога
+    \item[5.] Написать страницу для отправки файлов на сервер.
+    Размер сохраняемого на сервер файла не должен превышать 100 Kb.
+    После отправки пользователь должен получить информацию о размере
+    переданного файла, был ли файл перезаписан,
+    был ли файл присоединен к другому файлу,
+    был ли файл сохранен на сервере, каталог,
+    в котором был размещен на сервер файл, имя файла,
+    сохраненного на сервере, его расширение,
+    время создания и последней модификации.
+    \item[6.] Написать cfm.-шаблон для переименования файла 
+    \item[7.] Написать cfm.-шаблон для копирования файлов
+    \item[8.] Написать cfm.-шаблон для удаления файла
+    \item[9.] Написать cfm.-шаблон для считывания содержимого текстового файла.
+    Осуществить вывод содержимого считанного файла.
+    \item[10.] Осуществить считывание .jpg, .gif файла в базу данных SQL Srever.
+    Потом вывести сохраненный в базу данных рисунок на экран.
+\end{itemize}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/index.php}
+
+\lstinputlisting[]
+{../lamp/.env}
+
+\lstinputlisting[]
+{../lamp/Dockerfile}
+
+\lstinputlisting[]
+{../lamp/docker-compose.yml}
+
+\lstinputlisting[language=html]
+{../lamp/var/www/html/_html/head.html}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 1} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task1/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_look.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 2} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task2/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_mkdir.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 3} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task3/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_rename.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 4} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task4/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_rmdir.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 5} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task5/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task5/gpi_image_info.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 6} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task6/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_rename.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 7} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task7/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_copy.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 8} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task8/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_rm.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 9} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task9/index.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/_php/gpi_cat.php}
+
+% = = = = = = = = = = = = = = = =
+
+\subparagraph{Задание 10} \hspace{0pt}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task10/index.php}
+
+\lstinputlisting[language=sql]
+{../lamp/initdb.d/gpi_images.sql}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/env.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task10/gpi_connect.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task10/gpi_image_add.php}
+
+\lstinputlisting[language=php]
+{../lamp/var/www/html/task10/gpi_image_delete.php}
