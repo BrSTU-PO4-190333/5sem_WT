@@ -1,10 +1,10 @@
 <?php
-    $gpi_title = "task10 form";
+    $gpi_title = "task10 gpi_image_form";
     include "../_html/head.html";
 ?>
 
 <div class="container">
-    <?php printf("<h2><pre>%-32s %32s</pre></h2>", "=Галанин П. И.=", "=task10 form="); ?>
+    <?php printf("<h2><pre>%-32s %32s</pre></h2>", "=Галанин П. И.=", "=task10 gpi_image_form="); ?>
     <p><a href="/">На главную страницу</a></p>
     <p><a href="index.php">Просмотреть картинки</a></p>
 

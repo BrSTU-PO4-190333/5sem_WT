@@ -16,7 +16,7 @@
 <div class="container">
 	<?php printf("<h2><pre>%-32s %32s</pre></h2>", "=Галанин П. И.=", "=task10="); ?>
     <p><a href="/">На главную страницу</a></p>
-	<p><a href="form.php">Добавить картинку</a></p>
+	<p><a href="gpi_image_form.php">Добавить картинку</a></p>
 
 	<h2>Таблица картинок</h2>
 	<table class="table">
